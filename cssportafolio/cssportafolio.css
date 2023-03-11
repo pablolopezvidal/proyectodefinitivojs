@@ -1,0 +1,709 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+   
+}
+/*=================================*/
+/*PARTE SUPERIOR*/
+/*=================================*/
+
+#partesuperior{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Staatliches', cursive;
+    position: sticky;
+    top: 0;
+    background-color: rgb(231, 225, 225);
+    border-bottom:2px solid rgb(216, 214, 227) ;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;       
+}
+#partesuperior_uno{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    font-size: 40px;
+
+}
+#partesuperior_dos{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.botones{
+    width: 100px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 2px;     
+}
+#boton1{
+    border: 2px solid #cac0a2;
+    color: #cac0a2 ;
+}
+#boton1:hover{
+    border: 2px solid #cac0a2;
+    background-color: #cac0a2;
+    color: white ;
+    transition: 1s;
+}
+
+#boton2{
+    border: 2px solid #d8dbba;
+    color: #d8dbba ;
+}
+#boton2:hover{
+    border: 2px solid #d8dbba;
+    background-color: #d8dbba;
+    color: white ;
+    transition: 1s;
+}
+#boton3{
+    border: 2px solid #21314b;
+    color: #21314b ;
+}
+#boton3:hover{
+    border: 2px solid #21314b;
+    background-color: #21314b;
+    color: white ;
+    transition: 1s;
+}
+
+#boton4{
+    border: 2px solid #304971;
+    color: #304971; ;
+}
+#boton4:hover{
+    border: 2px solid #304971;
+    background-color: #304971;
+    color: white ;
+    transition: 1s;
+}
+#boton5{
+    border: 2px solid #97a7ba;
+    color: #97a7ba; ;
+}
+#boton5:hover{
+    border: 2px solid #97a7ba;
+    background-color: #97a7ba;
+    color: white ;
+    transition: 1s;
+}
+#palabra1{
+    color: #cac0a2;
+}
+#palabra2{
+    color:#21314b;
+}
+#palabra3{
+    color: #97a7ba;
+}
+#palabra1:hover  {
+    transform: translatey(39px);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+#palabra2:hover  {
+    transform: translatey(39px);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+#palabra3:hover  {
+    transform: translatey(39px);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+/*=================================*/
+/*PARTE DOS ABOUT ME*/
+/*=================================*/
+
+#partedos{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+#partedos_uno{
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    text-align: justify;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+}
+#partedos_uno:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse5122 1.5s infinite;
+   }
+   
+   @keyframes pulse5122 {
+    0% {
+     box-shadow: 0 0 0 0 #97a7ba;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+#partedos_dos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/*=================================*/
+/*PARTE TRES PROYECTOS*/
+/*=================================*/
+
+
+#enunciado1{
+    color: #97a7ba;
+    margin-top: 70px;
+    letter-spacing: 6px;
+}
+
+#partetres{
+    width: 100%;
+    height: 50vh; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.cartas{
+    width: 20%;
+    height: 60%;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 15px;
+    text-align: center;
+}
+   
+.cartas:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+  
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #21314b;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+#carta1{
+    background-color: #cac0a2;
+    display: block;
+}
+#carta2{
+    background-color: #304971;
+    display: block;
+}
+#carta3{
+    background-color: #97a7ba;
+    display: block;
+}
+#carta4{
+    background-color: #144e96;
+    display: block;
+}
+
+
+form:has(select > option[value="java"]:checked) + #partetres .java,
+form:has(select > option[value="html"]:checked) + #partetres .html,
+form:has(select > option[value="css"]:checked) + #partetres .css {
+    color: rgb(60, 237, 119);
+    animation: escala 2s;
+}
+
+@keyframes escala {
+    50% {
+        transform: scale(2);
+    }
+}
+
+.bubbly-button{
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(47, 95, 151);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(3, 61, 101, 0.5);
+}
+
+/*=================================*/
+/*PARTE CUATRO CURRICULUM*/
+/*=================================*/
+
+
+#enunciado2{
+    color: #21314b;
+    margin-top: 70px;
+    letter-spacing: 6px;
+}
+#partecuatro{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.cartas_cv{
+    width: 60%;
+    height: 40vh;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 6px;
+    gap: 10px;
+}
+#tit1{
+    color: #cac0a2;
+    font-size: 15px;
+}
+#tit2{
+    color: #d8dbba;
+    font-size: 15px;
+}
+#tit3{
+    color: #304971;
+    font-size: 15px;
+}
+#tit4{
+    color: #97a7ba;
+    font-size: 15px;
+}
+.card {
+    width: 80%;
+    height: 30vh;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cartas_cv .card {
+    
+    animation: animacion3a 5s infinite, animacion3b 5s infinite;
+    
+}
+@keyframes animacion3a {
+
+    50%{
+        transform: translateY(20px);
+    }
+
+}
+
+/*=================================*/
+/*PARTE CINCO REDES*/
+/*=================================*/
+
+
+#enunciado3{
+    color: #cac0a2;
+    margin-top: 70px;
+    letter-spacing: 6px;
+}
+#partecinco{
+    width: 100%;
+    height: 70vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#partecinco_1{
+    width: 70%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 15px;
+    
+}
+#partecinco_2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    
+}
+.redes{
+    width: 70%;
+    height: 15%;
+    border-radius: 10px;
+    min-width: 50vw;
+    min-height: 7vh
+}
+#twitter{
+    background-color: #00acee ;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#twitter:hover{
+    background-color: white;
+    color: #00acee;
+    border: 2px solid #00acee ;
+    transition: 2s;
+    animation: pulse1 1.5s infinite;
+}
+#insta{
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#insta:hover{
+    background-color: white;
+    color: #f09433;
+    border: 2px solid #bc1888;
+    transition: 2s;
+    animation: pulse1 1.5s infinite;
+}
+#yt{
+    background-color: red;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#yt:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    transition: 2s;
+    animation: pulse1 1.5s infinite;
+}
+#github{
+    background-color: orange;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#github:hover{
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    transition: 2s;
+    animation: pulse1 1.5s infinite;
+}
+#tiktok{
+    background-color: black;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#tiktok:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 2s ;
+    animation: pulse1 1.5s infinite;
+}
+#facebook{
+    background-color: #3b5998;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+}
+#facebook:hover{
+    background-color: white;
+    color: #3b5998;
+    border: 2px solid #3b5998;
+    transition: 2s;
+    animation: pulse1 1.5s infinite;
+}
+a:hover{
+    color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.aaa{
+    color: white;
+    text-decoration: none;
+}
+.aaa:hover{
+    color: black;
+}
+
+@keyframes pulse1 {
+ 0% {
+  
+ }
+
+ 50% {
+  width: 75%;
+ }
+}
+
+/*=================================*/
+/*PARTE SEIS CONTACTO*/
+/*=================================*/
+
+
+#enunciado4{
+    color:#97a7ba;
+    margin-top: 70px;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 20px;
+}
+#parteseis{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cajaform {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color:#21314b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4566a0;
+}
+
+.invalido {
+    border-color: #ff0000;
+}
+
+.valido {
+    border-color: #00ff00;
+}
+
+/*=================================*/
+/*PARTE FOOTER*/
+/*=================================*/
+
+#fin{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    border-top:2px solid rgb(216, 214, 227) ;
+    background-color: rgb(231, 225, 225);
+    gap: 200px;
+}
+
+#cambiocolor{
+    width: 30%;
+    height: 100%;
+}
+
+
+/*=================================*/
+/*PARTE MEDIAS QUERYS*/
+/*=================================*/
+
+
+@media (min-width: 570px) {
+    .cartas{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    #partedos_uno{
+        font-size: 15px;
+    }
+    
+}
+@media (min-width: 992px) {
+    #partedos_uno{
+        font-size: 18px;
+    }
+    .cartas{
+        font-size: 10px;
+    }
+    
+}
+@media (min-width: 1200px) {
+    #partedos_uno{
+        font-size: 21px;
+    }
+    #partesuperior{
+        height: 20vh;
+    }
+    #partesuperior_uno{
+        font-size: 60px;
+    }
+    .botones{
+        height: 60%;
+    }
+    .pcartas{
+        font-size: 20px;
+    }
+    .cartas{
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    #partedos_uno{
+        font-size: 22px;
+    }
+    #partesuperior{
+        height: 20vh;
+    }
+    #partesuperior_uno{
+        font-size: 60px;
+    }
+    .botones{
+        height: 60%;
+    }
+    .pcartas{
+        font-size: 20px;
+    }
+    .cartas{
+        font-size: 15px;
+    }
+}
+
+
